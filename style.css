@@ -6,7 +6,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #ffccbc;
+    background: #fff;
     transition: all 0.5s ease-out;
 }
 
@@ -35,10 +35,10 @@ li {
 }
 
 a {
-    color: #ffccbc;
+    color: #fff;
     display: inline-block;
 }
 
 a:hover {
-    color: #fff;
+    color:#ffccbc;
 }
