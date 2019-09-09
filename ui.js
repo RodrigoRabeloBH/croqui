@@ -1,8 +1,9 @@
-let data = []
+let data = [];
+
 const exame1 = {
     Tipo: "Exame 1",
-    Clinica: "Clínica 1",
-    Status: "Concluído",
+    Clinica: "Clinica 1",
+    Status: "Concluido",
     Id: 53526526,
     Envio: new Date("2019-07-25"),
     Criador: "John Doe",
@@ -11,7 +12,7 @@ const exame1 = {
 };
 const exame2 = {
     Tipo: "Exame 2",
-    Clinica: "Clínica 3",
+    Clinica: "Clinica 3",
     Status: "Aberto",
     Id: 53526526,
     Envio: new Date("2019-07-25"),
@@ -21,7 +22,7 @@ const exame2 = {
 };
 const exame3 = {
     Tipo: "Exame 3",
-    Clinica: "Clínica 2",
+    Clinica: "Clinica 2",
     Status: "Em andamento",
     Id: 53526526,
     Envio: new Date("2019-07-25"),
@@ -31,7 +32,7 @@ const exame3 = {
 };
 const exame4 = {
     Tipo: "Exame 4",
-    Clinica: "Clínica 100",
+    Clinica: "Clinica 100",
     Status: "Em andamento",
     Id: 53526526,
     Envio: new Date("2019-07-25"),
@@ -43,7 +44,10 @@ data.push(exame1);
 data.push(exame2);
 data.push(exame3);
 data.push(exame4);
-
+data.push(exame1);
+data.push(exame2);
+data.push(exame3);
+data.push(exame4);
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
@@ -57,7 +61,9 @@ localStorage.setItem('key',JSON.stringify(data));
             <td>${x.Tipo}</td>
             <td>${x.Clinica}</td>
             <td>${x.Status}</td>
-            <td><a href="details.html" class="btn btn-sm btn-info">Detalhes</a></td>
+            <td>
+		<a href="details.html" class="btn btn-sm btn-info"><i class="fas fa-search-plus"></i></a>		
+	    </td>
         </tr>
         `
     });
