@@ -42,3 +42,6 @@ a {
 a:hover {
     color:#ffccbc;
 }
+tr, input, select{
+    cursor: pointer;
+}
